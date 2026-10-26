@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </linearGradient>
+    <linearGradient id="dam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle for Android -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+
+  <!-- Mountain Gorges -->
+  <path d="M 0 320 L 140 180 L 220 280 L 160 380 L 0 420 Z" fill="#1e293b" opacity="0.7"/>
+  <path d="M 512 300 L 360 160 L 290 270 L 350 370 L 512 400 Z" fill="#1e293b" opacity="0.7"/>
+
+  <!-- Upstream Water Basin -->
+  <ellipse cx="256" cy="240" rx="180" ry="60" fill="url(#water)" opacity="0.6"/>
+
+  <!-- Concrete Gravity Arch Dam Structure -->
+  <path d="M 80 270 Q 256 220 432 270 L 452 380 Q 256 340 60 380 Z" fill="url(#dam)" stroke="#94a3b8" stroke-width="4"/>
+
+  <!-- Dam Crest Roadway -->
+  <path d="M 80 270 Q 256 220 432 270" fill="none" stroke="#e2e8f0" stroke-width="8"/>
+
+  <!-- Three Spillway Discharge Chutes with Cascading Water -->
+  <path d="M 216 250 L 200 370" fill="none" stroke="#7dd3fc" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 256 245 L 256 375" fill="none" stroke="#e0f2fe" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 296 250 L 312 370" fill="none" stroke="#7dd3fc" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Downstream River Flow -->
+  <path d="M 200 370 Q 256 460 180 512 L 340 512 Q 280 440 312 370 Z" fill="url(#water)"/>
+
+  <!-- High-Energy Lightning Bolt Symbol (Hydroelectric Power) -->
+  <polygon points="275,70 195,220 255,220 230,340 330,170 270,170" fill="url(#bolt)" filter="url(#glow)"/>
+
+  <!-- Damverse Tech Badge Outer Ring -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#38bdf8" stroke-width="6" opacity="0.4" stroke-dasharray="24 16"/>
+</svg>

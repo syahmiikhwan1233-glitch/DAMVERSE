@@ -1,0 +1,6 @@
+{
+  "name": "DAMVERSE - Simulasi Empangan & Tamadun Hidroelektrik 3D",
+  "description": "Simulasi empangan hidroelektrik 3D dunia terbuka dan pengurusan tamadun. Kawal pintu air, jana tenaga elektrik, urus takungan air dan kembangkan bandar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
